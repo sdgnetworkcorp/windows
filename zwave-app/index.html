@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Z-Wave Home Control</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="logo">&#x1F3E0; Z-Wave</div>
+      <nav>
+        <a href="#" class="nav-item active" data-view="dashboard">&#x1F4CA; Dashboard</a>
+        <a href="#" class="nav-item" data-view="devices">&#x1F4E1; Devices</a>
+        <a href="#" class="nav-item" data-view="rooms">&#x1F3E1; Rooms</a>
+        <a href="#" class="nav-item" data-view="network">&#x1F578; Network</a>
+        <a href="#" class="nav-item" data-view="settings">&#x2699; Settings</a>
+      </nav>
+      <div class="network-status">
+        <span class="status-dot online"></span>
+        <span>Controller Online</span>
+        <span class="badge">12 nodes</span>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <h2 id="viewTitle">Dashboard</h2>
+        <div class="topbar-right">
+          <span class="last-updated">&#x1F504; <span id="lastUpdated">just now</span></span>
+          <button id="refreshBtn" class="btn-icon">&#x21BB;</button>
+        </div>
+      </header>
+
+      <div id="viewContent" class="content">
+        <div class="stats-row">
+          <div class="stat-card"><span class="stat-icon">&#x1F4A1;</span><span class="stat-num" id="statLights">0</span><span class="stat-label">Lights On</span></div>
+          <div class="stat-card"><span class="stat-icon">&#x1F510;</span><span class="stat-num" id="statLocks">0</span><span class="stat-label">Locks</span></div>
+          <div class="stat-card"><span class="stat-icon">&#x1F321;</span><span class="stat-num" id="statTemp">--</span><span class="stat-label">Temperature</span></div>
+          <div class="stat-card"><span class="stat-icon">&#x26A1;</span><span class="stat-num" id="statBattery">0</span><span class="stat-label">Low Battery</span></div>
+        </div>
+        <div id="deviceGrid" class="device-grid"></div>
+      </div>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
