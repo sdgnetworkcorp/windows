@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TalkTime - AAC for Kids</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>TalkTime</h1>
+      <p>Tap pictures to build sentences</p>
+    </header>
+
+    <div id="sentence" class="sentence-bar">
+      <span id="sentenceText" class="sentence-text"></span>
+      <button id="speakBtn" class="btn-speak">&#x1F50A; Speak</button>
+      <button id="clearBtn" class="btn-clear">&#x274C; Clear</button>
+    </div>
+
+    <div id="categories" class="categories">
+      <button class="cat-btn active" data-cat="greetings">Greetings</button>
+      <button class="cat-btn" data-cat="feelings">Feelings</button>
+      <button class="cat-btn" data-cat="food">Food</button>
+      <button class="cat-btn" data-cat="drinks">Drinks</button>
+      <button class="cat-btn" data-cat="activities">Activities</button>
+      <button class="cat-btn" data-cat="people">People</button>
+      <button class="cat-btn" data-cat="places">Places</button>
+      <button class="cat-btn" data-cat="body">Body</button>
+      <button class="cat-btn" data-cat="colors">Colors</button>
+      <button class="cat-btn" data-cat="numbers">Numbers</button>
+    </div>
+
+    <div id="wordGrid" class="word-grid"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
