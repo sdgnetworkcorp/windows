@@ -105,6 +105,28 @@ const words = {
     { emoji: '🟫', label: 'Brown' },
     { emoji: '🩷', label: 'Pink' }
   ],
+  animals: [
+    { emoji: '🐶', label: 'Dog' },
+    { emoji: '🐱', label: 'Cat' },
+    { emoji: '🐰', label: 'Bunny' },
+    { emoji: '🐟', label: 'Fish' },
+    { emoji: '🐦', label: 'Bird' },
+    { emoji: '🐴', label: 'Horse' },
+    { emoji: '🐄', label: 'Cow' },
+    { emoji: '🐷', label: 'Pig' },
+    { emoji: '🐑', label: 'Sheep' },
+    { emoji: '🐔', label: 'Chicken' },
+    { emoji: '🦆', label: 'Duck' },
+    { emoji: '🐸', label: 'Frog' },
+    { emoji: '🐢', label: 'Turtle' },
+    { emoji: '🐒', label: 'Monkey' },
+    { emoji: '🦁', label: 'Lion' },
+    { emoji: '🐘', label: 'Elephant' },
+    { emoji: '🐧', label: 'Penguin' },
+    { emoji: '🐭', label: 'Mouse' },
+    { emoji: '🦋', label: 'Butterfly' },
+    { emoji: '🐝', label: 'Bee' }
+  ],
   numbers: [
     { emoji: '1️⃣', label: 'One' },
     { emoji: '2️⃣', label: 'Two' },
