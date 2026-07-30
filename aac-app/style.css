@@ -5,80 +5,100 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #f0f4f8;
-  color: #333;
+  font-family: 'Segoe UI', 'Comic Sans MS', Tahoma, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   min-height: 100vh;
+  padding: 20px;
 }
 
 .container {
-  max-width: 900px;
+  max-width: 950px;
   margin: 0 auto;
-  padding: 16px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 32px;
+  padding: 24px 28px 32px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
 }
 
 header {
   text-align: center;
-  padding: 20px 0;
+  padding: 8px 0 18px;
 }
 
 header h1 {
-  font-size: 2em;
-  color: #2c5282;
+  font-size: 2.6em;
+  background: linear-gradient(135deg, #667eea, #f093fb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: 1px;
 }
 
 header p {
-  color: #718096;
-  font-size: 1em;
+  color: #8898aa;
+  font-size: 1.05em;
+  margin-top: 4px;
 }
 
 .sentence-bar {
-  background: white;
-  border: 3px solid #2c5282;
-  border-radius: 16px;
-  padding: 16px;
-  margin-bottom: 16px;
-  min-height: 80px;
+  background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+  border: 3px solid #667eea;
+  border-radius: 20px;
+  padding: 14px 18px;
+  margin-bottom: 18px;
+  min-height: 76px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
+  box-shadow: inset 0 2px 8px rgba(0,0,0,0.05);
 }
 
 .sentence-text {
   flex: 1;
-  font-size: 1.4em;
+  font-size: 1.3em;
   min-height: 40px;
-  padding: 8px;
-  line-height: 1.5;
+  padding: 6px 8px;
+  line-height: 1.6;
   word-break: break-word;
 }
 
 .sentence-text .word-tag {
   display: inline-block;
-  background: #ebf8ff;
-  color: #2b6cb0;
-  border: 2px solid #bee3f8;
-  border-radius: 20px;
-  padding: 4px 14px;
-  margin: 2px 4px;
+  background: white;
+  color: #4a3f6b;
+  border: 2px solid #c4b5e0;
+  border-radius: 24px;
+  padding: 5px 16px;
+  margin: 3px 5px;
   font-size: 0.9em;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(102, 126, 234, 0.15);
+  animation: popIn 0.25s ease-out;
+}
+
+@keyframes popIn {
+  0% { transform: scale(0.7); opacity: 0.5; }
+  100% { transform: scale(1); opacity: 1; }
 }
 
 .btn-speak {
-  background: #48bb78;
+  background: linear-gradient(135deg, #48bb78, #38a169);
   color: white;
   border: none;
-  padding: 10px 20px;
-  border-radius: 30px;
-  font-size: 1.1em;
+  padding: 12px 24px;
+  border-radius: 40px;
+  font-size: 1.15em;
+  font-weight: 600;
   cursor: pointer;
-  transition: transform 0.15s, background 0.2s;
+  transition: all 0.2s;
+  box-shadow: 0 4px 14px rgba(72, 187, 120, 0.35);
 }
 
 .btn-speak:hover {
-  background: #38a169;
-  transform: scale(1.05);
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 6px 20px rgba(72, 187, 120, 0.5);
 }
 
 .btn-speak:active {
@@ -86,19 +106,21 @@ header p {
 }
 
 .btn-clear {
-  background: #fc8181;
+  background: linear-gradient(135deg, #fc8181, #f56565);
   color: white;
   border: none;
-  padding: 10px 20px;
-  border-radius: 30px;
-  font-size: 1.1em;
+  padding: 12px 24px;
+  border-radius: 40px;
+  font-size: 1.15em;
+  font-weight: 600;
   cursor: pointer;
-  transition: transform 0.15s, background 0.2s;
+  transition: all 0.2s;
+  box-shadow: 0 4px 14px rgba(252, 129, 129, 0.35);
 }
 
 .btn-clear:hover {
-  background: #f56565;
-  transform: scale(1.05);
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 6px 20px rgba(252, 129, 129, 0.5);
 }
 
 .btn-clear:active {
@@ -109,78 +131,89 @@ header p {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
   justify-content: center;
 }
 
 .cat-btn {
-  background: #e2e8f0;
-  border: 2px solid transparent;
-  border-radius: 25px;
-  padding: 8px 18px;
+  background: white;
+  border: 2px solid #e2e8f0;
+  border-radius: 30px;
+  padding: 8px 20px;
   font-size: 0.95em;
+  font-weight: 500;
   cursor: pointer;
   transition: all 0.2s;
+  color: #4a5568;
 }
 
 .cat-btn:hover {
-  background: #cbd5e0;
+  border-color: #667eea;
+  color: #667eea;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
 }
 
 .cat-btn.active {
-  background: #2c5282;
+  background: linear-gradient(135deg, #667eea, #764ba2);
   color: white;
-  border-color: #2c5282;
+  border-color: transparent;
+  box-shadow: 0 4px 14px rgba(102, 126, 234, 0.4);
 }
 
 .word-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
-  gap: 12px;
+  grid-template-columns: repeat(auto-fill, minmax(115px, 1fr));
+  gap: 14px;
 }
 
 .word-card {
   background: white;
-  border: 2px solid #e2e8f0;
-  border-radius: 16px;
-  padding: 16px 8px;
+  border: 2px solid #edf2f7;
+  border-radius: 20px;
+  padding: 18px 8px 14px;
   text-align: center;
   cursor: pointer;
-  transition: all 0.15s;
+  transition: all 0.2s;
   user-select: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
 .word-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
-  border-color: #2c5282;
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(102, 126, 234, 0.18);
+  border-color: #667eea;
 }
 
 .word-card:active {
-  transform: scale(0.95);
+  transform: scale(0.92);
 }
 
 .word-card .emoji {
-  font-size: 2.5em;
+  font-size: 2.8em;
   display: block;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
+  transition: transform 0.2s;
+}
+
+.word-card:hover .emoji {
+  transform: scale(1.15);
 }
 
 .word-card .label {
-  font-size: 1em;
-  font-weight: 600;
+  font-size: 0.98em;
+  font-weight: 700;
   color: #2d3748;
+  letter-spacing: 0.3px;
 }
 
 @media (max-width: 600px) {
-  .word-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 8px;
-  }
-  .word-card {
-    padding: 12px 4px;
-  }
-  .word-card .emoji {
-    font-size: 2em;
-  }
+  body { padding: 10px; }
+  .container { padding: 16px; border-radius: 24px; }
+  header h1 { font-size: 1.8em; }
+  .word-grid { grid-template-columns: repeat(3, 1fr); gap: 10px; }
+  .word-card { padding: 14px 4px 10px; }
+  .word-card .emoji { font-size: 2.2em; }
+  .sentence-bar { padding: 10px 14px; gap: 6px; }
+  .btn-speak, .btn-clear { padding: 10px 16px; font-size: 1em; }
 }
